@@ -38,4 +38,20 @@ form.addEventListener('submit', (ev) => {
         amount: amount.value,
         created_at: new Date(),
     }
+
+    // Chama a função que irá adicionar o item na lista
+    expenseAdd(newExpense)
 })
+
+function expenseAdd(newExpense) {
+    try {
+        // Cria o elemento para adicionar o item (li) na lista (ul)
+        const expenseItem = document.createElement("li")
+        expenseItem.classList.add = "expense"
+
+
+    } catch (error) {
+        alert("Não foi possível atualizar a lista de despesas.")
+        console.log(error)
+    }
+}
